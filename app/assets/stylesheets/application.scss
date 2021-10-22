@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  list-style-type: none;
+}
+.card {
+  background-color: aqua;
+  border: 1px solid red;
+  border-radius: 8px;
+  height: 200px;
+
+  color: red;
+}

@@ -1,0 +1,16 @@
+<div id="container">
+
+    <ul>
+    <div class="cards">
+        <%  @girls.each do |girl|%>
+    <li>
+        <div class="card">
+           <p><%= girl.name %></p> 
+        </div>
+    </li>
+        <% end %>
+    </ul>
+    </div>
+
+    <h2><%= link_to "NEW GIRL", new_girl_path %></h2>
+</div>
