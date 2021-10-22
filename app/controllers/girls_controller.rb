@@ -17,6 +17,22 @@ class GirlsController < ApplicationController
         @girl = Girl.new(girl_params)
         @girl.user = current_user
         @girl.save
+        redirect_to girl_path(@girl)
+    end
+
+    def edit
+        @girl = Girl.find(params[:id])
+    end
+
+    def update
+        @girl = Girl.find(params[:id])
+        @girl.update(girl_params)
+        redirect_to girl_path(@girl)
+    end
+
+    def destroy
+        @girl = Girl.find(params[:id])
+        @girl.destroy
         redirect_to root_path
     end
 
