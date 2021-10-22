@@ -2,6 +2,7 @@ class GirlsController < ApplicationController
     skip_before_action :authenticate_user!, only: :index
     def index
         @girls = Girl.all
+        @user = current_user
     end
 
     def new
