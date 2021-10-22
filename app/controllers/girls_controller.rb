@@ -10,7 +10,9 @@ class GirlsController < ApplicationController
     end
 
     def create
+        
         @girl = Girl.new(girl_params)
+        @girl.user = current_user
         @girl.save
         redirect_to root_path
     end
