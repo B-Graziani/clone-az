@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: "girls#index"
-  resources :girls, except: :index
+  root to: "pages#home"
+  resources :girls
 end
