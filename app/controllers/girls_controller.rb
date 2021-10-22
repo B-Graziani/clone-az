@@ -1,8 +1,11 @@
 class GirlsController < ApplicationController
-    skip_before_action :authenticate_user!, only: :index
+    skip_before_action :authenticate_user!, only: [:index, :show]
     def index
         @girls = Girl.all
         @user = current_user
+    end
+    def show
+        @girl = Girl.find(params[:id])
     end
 
     def new
