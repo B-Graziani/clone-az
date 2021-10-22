@@ -35,3 +35,21 @@
 
   color: red;
 }
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  background: bisque;
+  width: 100vw;
+  height: 80px;
+  align-items: center;
+}
+.navbar-first-group {
+  display: flex;
+  * {
+    padding: 5px;
+  }
+}
+.logo-home {
+  padding: 5px;
+  font-size: 4rem;
+}

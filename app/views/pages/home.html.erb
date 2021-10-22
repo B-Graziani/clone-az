@@ -1,4 +1,4 @@
-<%= render "shared/navbar" %>
+
 
 
 
@@ -9,9 +9,11 @@
 <br>
 <br>
 
-<%= link_to "sign-up", new_user_session_path %>
 <br>
-
+<%= link_to "index", girls_path %>
 <% if user_signed_in? %>
-    <%= link_to "index", girls_path %>
+    
+    <br>
+    <%= current_user.email %>
 <% end %>
+
