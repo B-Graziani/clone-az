@@ -13,5 +13,6 @@
 </div>
 
 
-
-<div class="btn"><%= link_to "Mon profil" %></div>
+<% if user_signed_in? %>
+    <div class="btn"><%= link_to "Mon profil" , user_path(@user) %></div>
+<% end %>
