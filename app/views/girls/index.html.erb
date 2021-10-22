@@ -11,6 +11,7 @@
         <% end %>
     </ul>
     </div>
-
-    <h2><%= link_to "NEW GIRL", new_girl_path %></h2>
+    <% if user_signed_in? %>
+        <h2><%= link_to "NEW GIRL", new_girl_path %></h2>
+    <% end %>
 </div>
