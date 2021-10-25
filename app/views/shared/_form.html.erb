@@ -1,9 +1,6 @@
-<%= form_for(@girl) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
+<%= simple_form_for(girl) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :content %>
   <%= f.submit %>
 <% end %>
