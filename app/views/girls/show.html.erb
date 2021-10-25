@@ -1,6 +1,8 @@
 <h1>SHOW</h1>
 <%= @girl.name %>
 <br>
+<%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
+<br>
 <%= link_to "edit", edit_girl_path %>
 <br>
 <%= link_to "delete", @girl, method: :delete, data: { confirm: "are you sure ? "} %>

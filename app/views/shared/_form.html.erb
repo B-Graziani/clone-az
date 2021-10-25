@@ -1,6 +1,7 @@
-<%= simple_form_for(girl) do |f| %>
+<%= simple_form_for(@girl) do |f| %>
   <%= f.input :name %>
   <%= f.input :address %>
   <%= f.input :content %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>
