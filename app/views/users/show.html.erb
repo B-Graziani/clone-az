@@ -1,3 +1,6 @@
 <h1>my profil</h1>
 
     <%= @user.email %>
+    <% if user_signed_in? %>
+        <h2><%= link_to "NEW GIRL", new_girl_path(@user) %></h2>
+    <% end %>
